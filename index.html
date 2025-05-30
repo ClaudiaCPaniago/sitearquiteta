@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>Site de Arquitetura</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>Arquitetura</h1>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Transformando espaços com elegância</h1>
+    <div class="carousel">
+      <div class="carousel-track">
+        <img src="/assets/foto1.avif" alt="Projeto 1" />
+        <img src="/assets/foto2.avif" alt="Projeto 2" />
+        <img src="/assets/foto3.avif" alt="Projeto 3" />
+        <img src="/assets/foto4.avif" alt="Projeto 4" />
+        <img src="/assets/foto5.avif" alt="Projeto 5" />
+        <img src="/assets/foto6.avif" alt="Projeto 6" />
+      </div>
+    </div>
+  </section>
+
+
+  <section id="sobre" data-aos="fade-up">
+    <h2>Sobre</h2>
+    <p>
+      Somos um estúdio de arquitetura que une estética, funcionalidade e sofisticação.
+      Atuamos com foco em projetos residenciais, comerciais e consultórios, valorizando
+      cada detalhe para criar ambientes que refletem a identidade e os sonhos dos nossos clientes.
+    </p>
+  </section>
+
+  <section id="servicos" data-aos="fade-right">
+    <h2>Serviços</h2>
+    <div class="cards-servicos">
+      <div class="card-servico">
+        <h3>Projeto Residencial</h3>
+        <p>Criação de projetos arquitetônicos personalizados para residências, focando em conforto, funcionalidade e estética.</p>
+      </div>
+      <div class="card-servico">
+        <h3>Projeto Comercial</h3>
+        <p>Desenvolvimento de espaços comerciais eficientes, que valorizam a marca e otimizam o atendimento ao cliente.</p>
+      </div>
+      <div class="card-servico">
+        <h3>Consultoria de Interiores</h3>
+        <p>Aconselhamento especializado para transformar ambientes com funcionalidade, estilo e personalidade.</p>
+      </div>
+      <div class="card-servico">
+        <h3>Reforma e Retrofit</h3>
+        <p>Atualização e modernização de imóveis, respeitando sua estrutura original e melhorando o uso do espaço.</p>
+      </div>
+      <div class="card-servico">
+        <h3>Projeto para Consultórios</h3>
+        <p>Espaços acolhedores e funcionais, com foco em bem-estar e eficiência para clínicas e consultórios.</p>
+      </div>
+      <div class="card-servico">
+        <h3>Design de Interiores</h3>
+        <p>Planejamento completo da decoração e organização de ambientes internos, com foco nos detalhes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" data-aos="zoom-in">
+    <h2>Portfólio</h2>
+    <div class="filtros">
+      <button class="filtro ativo" data-comodo="todos">Todos</button>
+      <button class="filtro" data-comodo="sala">Salas</button>
+      <button class="filtro" data-comodo="quarto">Quartos</button>
+      <button class="filtro" data-comodo="banheiro">Banheiros</button>
+      <button class="filtro" data-comodo="cozinha">Cozinhas</button>
+    </div>
+
+    <div class="galeria">
+      <div class="item" data-comodo="sala">
+        <img src="/assets/sala2.avif" alt="Sala  moderna" />
+        <h3>Sala Contemporânea</h3>
+      </div>
+      <div class="item" data-comodo="quarto">
+        <img src="/assets/quarto4.avif" alt="Quarto elegante" />
+        <h3>Quarto Elegante</h3>
+      </div>
+      <div class="item" data-comodo="sala">
+        <img src="/assets/sala1.avif" alt="Sala sofisticada" />
+        <h3>Sala Boho</h3>
+      </div>
+      <div class="item" data-comodo="sala">
+        <img src="/assets/sala3.jpg" alt="Sala  moderna" />
+        <h3>Sala Contemporânea</h3>
+      </div>
+      <div class="item" data-comodo="quarto">
+        <img src="/assets/quarto1.avif" alt="Quarto moderno" />
+        <h3>Quarto Moderno</h3>
+      </div>
+      <div class="item" data-comodo="quarto">
+        <img src="/assets/quarto2.avif" alt="Quarto moderno" />
+        <h3>Quarto Moderno</h3>
+      </div>
+      <div class="item" data-comodo="banheiro">
+        <img src="/assets/banheiro1.avif" alt="Banheiro moderno" />
+        <h3>Banheiro Moderno</h3>
+      </div>
+      <div class="item" data-comodo="banheiro">
+        <img src="/assets/banheiro2.avif" alt="Banheiro moderno" />
+        <h3>Banheiro Divertido</h3>
+      </div>
+      <div class="item" data-comodo="banheiro">
+        <img src="/assets/banheiro3.avif" alt="Banheiro moderno" />
+        <h3>Banheiro Rústico</h3>
+      </div>
+      <div class="item" data-comodo="cozinha">
+        <img src="/assets/cozinha1.avif" alt="Cozinha" />
+        <h3>Cozinha</h3>
+      </div>
+      <div class="item" data-comodo="cozinha">
+        <img src="/assets/coz2.avif" alt="Cozinha" />
+        <h3>Cozinha Moderna</h3>
+      </div>
+      <div class="item" data-comodo="cozinha">
+        <img src="/assets/coz3.avif" alt="Cozinha" />
+        <h3>Cozinha Farmhouse</h3>
+      </div>
+      <div class="item" data-comodo="cozinha">
+        <img src="/assets/coz4.avif" alt="Cozinha" />
+        <h3>Cozinha </h3>
+      </div>
+  </section>
+
+  <section id="contato" data-aos="fade-right">
+    <h2>Contato</h2>
+    <p>Entre em contato para orçamentos, dúvidas ou para conversar sobre seu projeto!</p>
+    <form>
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar mensagem</button>
+    </form>
+    <a href="https://wa.me/5599999999999?text=Olá%2C%20tenho%20interesse%20em%20falar%20sobre%20um%20projeto%20de%20arquitetura!" target="_blank" class="btn" style="margin-top: 1rem; display: inline-block;">
+      Fale pelo WhatsApp
+    </a>
+    </div>
+  </section>
+
+  <footer style="text-align: center; padding: 2rem 1rem; background-color: #f8f8f8;">
+    <p style="margin-bottom: 1rem;">&copy; 2025 Arquitetura Elegante. Todos os direitos reservados.</p>
+
+    <div style="display: flex; justify-content: center; gap: 1rem;">
+      <a href="https://www.instagram.com/sua_conta" target="_blank" class="social-icon" aria-label="Instagram">
+        <i class="fa-brands fa-instagram fa-lg"></i>
+      </a>
+      <a href="mailto:arquitetura@arquitetura.com.br" class="social-icon" aria-label="E-mail">
+        <i class="fa-solid fa-envelope fa-lg"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" class="social-icon" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin fa-lg"></i>
+      </a>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" title="Voltar ao topo">
+    ↑
+  </a>
+  <script src="/app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

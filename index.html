@@ -5,18 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
   <title>Site de Arquitetura</title>
 </head>
 
 <body>
   <header>
     <nav class="navbar">
-      <h1>Arquitetura</h1>
-      <ul class="menu">
+      <h1>
+        <a href="#home">Arquitetura</a>
+      </h1>
+
+      <div class="navbar-right">
+        <!-- Botão modo claro/escuro -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <!-- Botão hamburguer -->
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </div>
+      </div>
+
+      <ul class="menu" id="menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#servicos">Serviços</a></li>
@@ -39,7 +53,6 @@
       </div>
     </div>
   </section>
-
 
   <section id="sobre" data-aos="fade-up">
     <h2>Sobre</h2>
@@ -92,7 +105,7 @@
 
     <div class="galeria">
       <div class="item" data-comodo="sala">
-        <img src="/assets/sala2.avif" alt="Sala  moderna" />
+        <img src="/assets/sala2.avif" alt="Sala moderna" />
         <h3>Sala Contemporânea</h3>
       </div>
       <div class="item" data-comodo="quarto">
@@ -104,7 +117,7 @@
         <h3>Sala Boho</h3>
       </div>
       <div class="item" data-comodo="sala">
-        <img src="/assets/sala3.jpg" alt="Sala  moderna" />
+        <img src="/assets/sala3.jpg" alt="Sala moderna" />
         <h3>Sala Contemporânea</h3>
       </div>
       <div class="item" data-comodo="quarto">
@@ -141,8 +154,9 @@
       </div>
       <div class="item" data-comodo="cozinha">
         <img src="/assets/coz4.avif" alt="Cozinha" />
-        <h3>Cozinha </h3>
+        <h3>Cozinha</h3>
       </div>
+    </div>
   </section>
 
   <section id="contato" data-aos="fade-right">
@@ -157,13 +171,11 @@
     <a href="https://wa.me/5599999999999?text=Olá%2C%20tenho%20interesse%20em%20falar%20sobre%20um%20projeto%20de%20arquitetura!" target="_blank" class="btn" style="margin-top: 1rem; display: inline-block;">
       Fale pelo WhatsApp
     </a>
-    </div>
   </section>
 
-  <footer style="text-align: center; padding: 2rem 1rem; background-color: #f8f8f8;">
-    <p style="margin-bottom: 1rem;">&copy; 2025 Arquitetura Elegante. Todos os direitos reservados.</p>
-
-    <div style="display: flex; justify-content: center; gap: 1rem;">
+  <footer>
+    <p>&copy; 2025 Arquitetura Elegante. Todos os direitos reservados.</p>
+    <div class="social-icons">
       <a href="https://www.instagram.com/sua_conta" target="_blank" class="social-icon" aria-label="Instagram">
         <i class="fa-brands fa-instagram fa-lg"></i>
       </a>
@@ -179,6 +191,7 @@
   <a href="#" class="back-to-top" title="Voltar ao topo">
     ↑
   </a>
+
   <script src="/app.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
